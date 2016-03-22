@@ -1,7 +1,7 @@
 from weddings.models import WeddingGuest, Invitation
 import datetime
 from django.http import HttpResponse
-from django.utils import simplejson
+import json as simplejson
 from django.utils.translation import ugettext as _
 from django.utils.translation import activate
 

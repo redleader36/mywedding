@@ -3,7 +3,7 @@
 from django.contrib import admin
 from django_markdown.admin import MarkdownModelAdmin
 from weddings.models import *
-from forms import InvitationForm
+from weddings.forms import InvitationForm
 from django.contrib import messages
 from django.core.mail import send_mass_mail
 from django.utils.translation import ugettext as _

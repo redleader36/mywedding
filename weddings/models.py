@@ -93,8 +93,8 @@ class CodeGuess(models.Model):
         verbose_name = u'Invitation code guess'
         verbose_name_plural = u'Invitation code guesses'
 
-    ip = models.IPAddressField(verbose_name=u'IP address')
-    when_tried = models.DateTimeField(auto_now=True, auto_now_add=True, verbose_name=u'When')
+    ip = models.GenericIPAddressField(verbose_name=u'IP address')
+    when_tried = models.DateTimeField(auto_now=True, verbose_name=u'When')
     guess_code = models.CharField(max_length=255, blank=True, null=True, verbose_name=u'Invitation code guessed')
 
     def __unicode__(self):

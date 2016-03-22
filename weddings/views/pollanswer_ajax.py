@@ -1,6 +1,6 @@
 from weddings.models import Invitation, Choice, UserChoice
 from django.http import HttpResponse
-from django.utils import simplejson
+import json as simplejson
 
 
 def poll_comment(request, question_id, *args, **kwargs):
